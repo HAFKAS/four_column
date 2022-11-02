@@ -1,0 +1,146 @@
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.backvideo{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .2;
+
+}
+header{
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+h1{
+    font-weight: 200;
+    margin: 0;
+    padding-bottom: 10px;
+}
+h1.strong{
+    font-weight: 600;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    justify-content: center;
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.8) transparent;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: relative;
+    outline: hidden;
+}
+
+
+.box-1 {
+    border-top: 0.25rem solid var(--Cyan);
+    transition: 0.7s ease;
+  }
+  
+  .box-1:hover {
+    border-bottom: 0.25rem solid var(--Cyan);
+  }
+  
+  .box-2 {
+    border-top: 0.25rem solid var(--Red);
+    transition: 0.7s ease;
+  }
+  
+  .box-2:hover {
+    border-bottom: 0.25rem solid var(--Red);
+  }
+  
+  .box-3 {
+    border-top: 0.25rem solid var(--Orange);
+    transition: 0.7s ease;
+  }
+  .box-3:hover {
+    border-bottom: 0.25rem solid var(--Orange);
+  }
+  
+  .box-4 {
+    border-top: 0.25rem solid var(--Blue);
+    transition: 0.7s ease;
+  }
+  
+  .box-4:hover {
+    border-bottom: 0.25rem solid var(--Blue);
+  }
+.box-push{
+    transform: translateY(50%);
+}
+.box h2{
+    color:var(--Very-Dark-Blue);
+    margin: 0;
+}
+.box p{
+    font-size:14px;
+    margin: 15px 0 30px;
+    color: var(--Grayish-Blue);
+}
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+@media(max-width: 989px){
+    .box-push{
+        transform: translateY(0);
+    }
+}
+@media(max-width: 660px){
+  body{
+    overflow: scroll;
+  }
+  .backvideo{
+    height: 1250px;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .2;
+}
+header{
+  margin: 50px auto;
+}
+
+}
